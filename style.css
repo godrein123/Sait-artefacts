@@ -39,6 +39,66 @@ p {
 .nuv-item:active {
 	border: 1px solid #83A440;
 	color: #FFFFFF;
+	margin-left: -1px;
+	margin-right: 63px;
+}
+@media (max-width: 900px) {
+  .burger{
+    display: initial;
+  }
+  .nuv-item {
+    float: none;
+    padding: 15px 80px;
+  }
+  nav {
+    float: left;
+    padding-left: 0;
+  }
+  .nuv{
+    display: none;
+  }
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.burger {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+.burger .icon-b {
+  position: absolute;
+  height: 3px;
+  width: 24px;
+  top: 12px;
+  background-color: #212121;
+}
+
+.burger .icon-b:before {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #212121;
+  content: "";
+  top: -8px;
+}
+
+.burger .icon-b:after {
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #212121;
+  content: "";
+  top: 8px;
 }
 .icon-items {
 	display: flex;
@@ -550,20 +610,7 @@ p {
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
     transform: rotate(-45deg);
 }
-.arrow-4:hover {
-    animation: arrow-4 1s linear infinite;
-}
-@keyframes arrow-4 {
-    0% {
-        left:0;
-    }
-    50% {
-        left:10px;
-    }
-    100% {
-        left:0;
-    }
-}
+
 											/*block-3
 ------------------------------------------------------------------------------------------------------------
                                               block-4*/

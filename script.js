@@ -18,7 +18,7 @@ function toggleNuv() {
 burger.addEventListener("click", toggleNuv);
 
 function nuvResize() {
-	if (window.innerWidth > 900) {
+	if (window.innerWidth > 1080) {
 		nuv.style.display = 'block';
 		burger.style.display = 'none';
 	} else {

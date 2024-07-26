@@ -51,7 +51,7 @@ p {
   top: 20px;
   display: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .burger{
     display: initial;
   }
@@ -152,7 +152,7 @@ p {
 	
 	
 }
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
 .hero { background-image: url("image/bg_hero_2.png");
 		background-size: cover;
 		background-color: #ffffff;
@@ -460,7 +460,7 @@ p {
 	display: flex;
 	padding-left: 12%;
 }
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
 	.b3_subitems {
 		display: block;
 	}

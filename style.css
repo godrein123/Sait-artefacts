@@ -42,29 +42,6 @@ p {
 	margin-left: -1px;
 	margin-right: 63px;
 }
-@media (max-width: 900px) {
-  .burger{
-    display: initial;
-  }
-  .nuv-item {
-    float: none;
-    padding: 15px 80px;
-  }
-  nav {
-    float: left;
-    padding-left: 0;
-  }
-  .nuv{
-    display: none;
-  }
-}
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
-}
 .burger {
   cursor: pointer;
   height: 24px;
@@ -74,6 +51,39 @@ p {
   top: 20px;
   display: none;
 }
+@media (max-width: 900px) {
+  .burger{
+    display: initial;
+  }
+  .nuv-item {
+    float: right;
+    padding: 0px;
+	white-space: nowrap;
+	
+  }
+  nav {
+    float: left;
+    padding-left: 0;
+  }
+  .nuv{
+    display: none;
+	position: relative;
+	top: 31px;
+	left: 230px;
+	line-height: 60px;
+	white-space: nowrap;
+	
+  }
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+	
+}
+
 
 .burger .icon-b {
   position: absolute;
@@ -142,11 +152,18 @@ p {
 	
 	
 }
+@media (max-width: 900px) {
+.hero { background-image: url("image/bg_hero_2.png");
+		background-size: cover;
+		background-color: #ffffff;
+	}
+}
 .hero-title {
 	
 	padding-left: 12%;
 	padding-top: 13%;
 	z-index: 1;
+	
 	
 }
 .img-hero {
@@ -442,6 +459,11 @@ p {
 .b3_subitems {
 	display: flex;
 	padding-left: 12%;
+}
+@media (max-width: 900px) {
+	.b3_subitems {
+		display: block;
+	}
 }
 .b3_items {
 	background-image: url(image/bg_cards.jpg);
